@@ -4,10 +4,10 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class UserModel extends Model {
-    protected $table = 'Users';
+class CourseModel extends Model {
+    protected $table = 'courses';
 
     protected $primaryKey = 'id';
 
-    protected $allowedFields = ['name', 'first_name', 'last_name', 'password'];
+    protected $allowedFields = ['title', 'description', 'url_image', 'price', 'cotegory_id'];
 }
