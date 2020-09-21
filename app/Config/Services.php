@@ -27,4 +27,10 @@ class Services extends CoreServices
 	//
 	//        return new \CodeIgniter\Example();
 	//    }
+
+	
+	public static function getSecretKey()
+	{
+		return 'otavio';
+	}
 }

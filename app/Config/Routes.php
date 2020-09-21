@@ -31,7 +31,9 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-
+$routes->resource('api/auth', ['controller' => 'AuthController']);
+$routes->resource('api/user', ['controller' => 'UserController']);
+$routes->post('api/auth/verifyToken', 'AuthController::verifyToken');
 /**
  * --------------------------------------------------------------------
  * Additional Routing
